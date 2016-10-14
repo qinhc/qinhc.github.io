@@ -1,0 +1,15 @@
+permalink: /:title.html
+title: Qin
+description: "Qin's Blog"
+keywords: computer, science, machine learning, data mining, community
+production_url: http://qinhc.github.io
+pygments: false
+markdown: kramdown
+author :
+  name : Hongchao Qin
+  github : qinhc
+  twitter : qinhongchao
+  email: qhc.neu@gmail.com
+  linkedin: Hongchao Qin
+disqus_shortname: Qin
+analytics: N/A
