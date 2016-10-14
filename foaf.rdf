@@ -10,9 +10,9 @@
   <admin:errorReportsTo rdf:resource="mailto:leigh@ldodds.com"/>
 </foaf:PersonalProfileDocument>
 <foaf:Person rdf:ID="me">
-<foaf:name>Hongchao Qin Qin</foaf:name>
+<foaf:name>Hongchao Qin</foaf:name>
 <foaf:title>Mr</foaf:title>
-<foaf:givenname>Hongchao Qin</foaf:givenname>
+<foaf:givenname>Hongchao</foaf:givenname>
 <foaf:family_name>Qin</foaf:family_name>
 <foaf:nick>Mark</foaf:nick>
 <foaf:mbox_sha1sum>f295088b90f7e12f3f205aadb782112817fc9204</foaf:mbox_sha1sum>
