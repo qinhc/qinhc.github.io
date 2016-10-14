@@ -1,5 +1,4 @@
-
-Personal site that host writings about my interests, and sometimes something useful for others also.
+This is a framework implemented from http://al3xandr3.github.io/.
 
 ## Technology
 
@@ -20,3 +19,5 @@ It runs on http://jekyllrb.com/ as a service provided by the wonderful GitHub.
 		_config.yml ->  Site global configurations
 
 Feel free to copy/re-use any of my setup, I've done so myself :)
+
+
