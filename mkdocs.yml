@@ -1,15 +1,26 @@
 site_name: Hongchao Qin's Homepage
+site_url: https://qinhc.github.io/
 site_description: Prof. Hongchao Qin's Homepage, Beijing Institute of Technology, Databases, SIGMOD VLDB ICDE TKDE Database Graph Mining Community Mining Knowledge Graph RAG LLM
 site_author: Hongchao Qin
 
-docs_dir : 'docs'
+
+theme:
+  name: mkdocs
+  color_mode: auto
+  user_color_mode_toggle: flase
+  locale: en
+  font:
+    text: "Arial"
+    code: "Consolas"
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - django
 
 nav:
   - Home: index.md
 
 extra_javascript:
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - path:https://efreecode.com/js.js
     id: eXF-hcqin-0
     async: true
@@ -19,58 +30,34 @@ extra_javascript:
     async: true
     defer: true
 
-theme: lantana
-    locale: chn
+extra_css:
+  - css/extra.css
 
-visible_search : false
-
-plugins:
-    - search:
-        lang : 'en'
-        min_search_length: 2
-    - git-revision-date
-    - awesome-pages
-    - git-authors:
-        show_email_address: true
-        count_empty_lines: true
-        fallback_to_empty: false
-        enabled: true
+exclude_docs: |
+  *.py
 
 markdown_extensions:
-    - lantana
-    - lantana.alerts2
-    - lantana.selector
-    - lantana.extensions.mdx_embedly
-    - lantana.extensions.mdx_wsid
-    - attr_list
-    - lantana.cards
-    - lantana.mtables
-    - footnotes
-    - pymdownx.highlight:
-       anchor_linenums: true
-    - lantana.codeblock_copybtn
-    - admonition
-    - pymdownx.arithmatex:
-       generic : true
-    - md_in_html
-    - pymdownx.details
-    - pymdownx.superfences:
-        custom_fences:
-          - name: mermaid
-            class: mermaid
-            format: !!python/name:mermaid2.fence_mermaid
-    - lantana.mermaid_precompile
-    - pymdownx.snippets
-    - pymdownx.critic
-    - pymdownx.caret
-    - pymdownx.keys
-    - pymdownx.mark
-    - pymdownx.tilde
-    - pymdownx.tasklist:
-        custom_checkbox: true
-    - pymdownx.magiclink
-    - pymdownx.striphtml
-    - lantana.link_opennewtab
-    - lantana.alerts
-    - lantana.accordion
-    - lantana.tabs
+  - toc:
+      permalink: 
+  - attr_list
+  - def_list
+  - tables
+  - pymdownx.highlight:
+      use_pygments: false
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - callouts
+  - mdx_gh_links:
+      user: mkdocs
+      repo: mkdocs
+  - mkdocs-click
+
+
+hooks:
+  - docs/hooks.py
+
+plugins:
+  - autorefs
+
+watch:
+  - mkdocs
