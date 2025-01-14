@@ -18,7 +18,7 @@ theme:
     - django
 
 nav:
-  index.md
+  - index.md
 
 extra_javascript:
   - path:https://efreecode.com/js.js
