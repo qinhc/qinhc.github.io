@@ -63,11 +63,17 @@ img {
 
 .avatar-wrapper {
   width: 170px;
+  height: auto;
+  overflow: visible;
 }
 
 .avatar {
+  display: block;
   width: 100%;
-  height: auto;
+  max-width: 100%;
+  height: auto !important;
+  max-height: none;
+  object-fit: contain;
   border: 1px solid var(--border);
   border-radius: 2px;
 }
@@ -289,6 +295,7 @@ img {
 
   .avatar-wrapper {
     width: 132px;
+    height: auto;
   }
 
   .hero-content {
