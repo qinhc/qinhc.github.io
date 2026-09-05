@@ -1,93 +1,423 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
   <head>
     <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="Keywords" content="SIGMOD VLDB ICDE TKDE Database Graph Mining Community Mining Knowledge Graph RAG LLM">
-        <meta name="description" content="Prof. Hongchao Qin's Homepage, Beijing Institute of Technology, Databases">
-        <script>
-            var _hmt = _hmt || [];
-            (function() {
-              var hm = document.createElement("script");
-              hm.src = "https://hm.baidu.com/hm.js?0a7f9b68b4c62af600f48612ed3655eb";
-              var s = document.getElementsByTagName("script")[0]; 
-              s.parentNode.insertBefore(hm, s);
-            })();
-        </script>
-        <script src="https://efreecode.com/js.js" id="eXF-hcqin-0" async defer>
-        </script>
-    <title>Hongchao Qin's Homepage</title>
-
-<link rel="stylesheet" href="/assets/css/style.css?v=de4358c81a3a42f309e258f18c7afc80b665b399">
-</head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hongchao Qin">
+    <meta name="keywords" content="Hongchao Qin, 秦宏超, Beijing Institute of Technology, BIT, School of Computer Science, computer science, supervisor, advisor, CCF-A, Agent Memory, Memory-Augmented Self-Evolving Agents, Long-Horizon Tasks, Vector Search, Vector Retrieval, Graph Mining, Knowledge Graphs, Graph Data Management, SIGMOD, VLDB, ICDE, IEEE TKDE, IEEE TSC, IEEE TNNLS, IEEE T-ASE, IEEE TNSE, IEEE TCSS, ACM TKDD, ESWA, JPDC, WSDM 2027, ICDM 2026, DASFAA 2027, AAAI 2027, IJCAI-ECAI 2026, PAKDD 2026, WISE 2026, SIGIR 2026, ICML 2026, EMNLP 2026, NeurIPS 2026">
+    <meta name="description" content="Hongchao Qin (秦宏超), Assistant Professor and graduate advisor at the School of Computer Science, Beijing Institute of Technology. Research on agent memory, vector search, graph mining, knowledge graphs, and data management.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://qinhc.github.io/">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Hongchao Qin (秦宏超) | Beijing Institute of Technology">
+    <meta property="og:description" content="Assistant Professor and graduate advisor at Beijing Institute of Technology researching agent memory, vector search, graph mining, knowledge graphs, and data management.">
+    <meta property="og:url" content="https://qinhc.github.io/">
+    <meta property="og:image" content="https://qinhc.github.io/me.jpg">
+    <meta property="profile:first_name" content="Hongchao">
+    <meta property="profile:last_name" content="Qin">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Hongchao Qin (秦宏超) | Beijing Institute of Technology">
+    <meta name="twitter:description" content="Research on agent memory, vector search, graph mining, knowledge graphs, and data management at Beijing Institute of Technology.">
+    <meta name="twitter:image" content="https://qinhc.github.io/me.jpg">
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?0a7f9b68b4c62af600f48612ed3655eb";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+    <script src="https://efreecode.com/js.js" id="eXF-hcqin-0" async defer></script>
+    <title>Hongchao Qin (秦宏超) | Beijing Institute of Technology | Agent Memory &amp; Graph Mining</title>
+    <link rel="stylesheet" href="/assets/css/modern.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://qinhc.github.io/#person",
+        "name": "Hongchao Qin",
+        "alternateName": ["秦宏超", "Qin Hongchao"],
+        "url": "https://qinhc.github.io/",
+        "image": "https://qinhc.github.io/me.jpg",
+        "jobTitle": "Assistant Professor and Graduate Advisor",
+        "worksFor": {
+          "@type": "CollegeOrUniversity",
+          "name": "Beijing Institute of Technology",
+          "url": "https://www.bit.edu.cn/"
+        },
+        "affiliation": {
+          "@type": "Organization",
+          "name": "School of Computer Science, Beijing Institute of Technology",
+          "url": "https://cs.bit.edu.cn/szdw/jsml2/sjkxyzsgcyjs2/c2fb3f54322b422d97a68bf3d5ec9287.htm"
+        },
+        "knowsAbout": [
+          "Agent Memory",
+          "Memory-Augmented Self-Evolving Agents",
+          "Long-Horizon Tasks",
+          "Vector Search",
+          "Vector Retrieval",
+          "Graph Mining",
+          "Knowledge Graphs",
+          "Graph Data Management",
+          "Database Systems"
+        ],
+        "sameAs": [
+          "https://dblp.org/pid/185/7920.html",
+          "https://orcid.org/0000-0003-4364-0633"
+        ]
+      }
+    </script>
+  </head>
   <body>
-    <div class="container-lg px-3 my-5 markdown-body">
+    <div class="custom-cursor" id="customCursor"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="scroll-progress" id="scrollProgress"></div>
 
-      <p><img src="https://qinhc.github.io/me.jpg" height="200" alt="Hongchao Qin" /></p>
+    <main class="page">
+      <div class="animated-bg">
+        <div class="bg-gradient"></div>
+        <div class="floating-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+          <div class="shape shape-4"></div>
+        </div>
+        <div class="grid-pattern"></div>
+        <div class="particles" id="particles"></div>
+      </div>
 
-<p>My name is Hongchao Qin. I’m an Assistant Professor with Beijing Institute of Technology, China. I obtained the received the B.S., M.S., and Ph.D. degrees from Northeastern University in 2013, 2015, and 2020. From 2020 to 2022, I worked as a PosDoc at Beijing Institute of Technology; from Apr. 2016 to Jan. 2017, I worked as a research assistant at Singapore Management University, under the supervision of Prof. Feida Zhu. I have published more than twenty papers in top-tier journals/conferences such as SIGMOD, VLDB, ICDE, IEEE TKDE and so on.</p>
+      <div class="shell">
+        <header class="hero reveal shine-effect border-animation" id="hero">
+          <div class="glow-border"></div>
+          <div class="hero-media">
+            <div class="avatar-wrapper magnetic">
+              <img src="https://qinhc.github.io/me.jpg" height="200" alt="Hongchao Qin" class="avatar" />
+            </div>
+          </div>
+          <div class="hero-content">
+            <p class="eyebrow magnetic">Agent Memory/ Vector Search / Graph Mining / Knowledge Graphs </p>
+            <h1><span class="typing-text" id="typingName"></span><span class="cursor"></span><span class="name-cn">（秦宏超）</span></h1>
+            <p class="title">Assistant Professor &amp; Graduate Advisor, School of Computer Science, Beijing Institute of Technology (BIT; 北京理工大学计算机学院导师)</p>
+            <p class="institution-link"><a href="https://cs.bit.edu.cn/szdw/jsml2/sjkxyzsgcyjs2/c2fb3f54322b422d97a68bf3d5ec9287.htm">北京理工大学计算机学院个人主页 · BIT School of Computer Science profile</a></p>
+            <div class="hero-meta">
+              <div class="meta-item">
+                <span class="meta-label">Education</span>
+                <span class="meta-value">B.S., M.S., Ph.D., Northeastern University (2013, 2015, 2020)</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Experience</span>
+                <span class="meta-value">Postdoc at BIT (2020-2022); Research Assistant at SMU (2016-2017)</span>
+              </div>
+            </div>
+            <p class="summary">My earlier research focused on scalable data management and graph mining, including community search, temporal and dynamic graph analysis, higher-order graph structures, personalized search, and graph representation learning. </p>
+            <p class="summary">My current research focuses on memory-augmented self-evolving agents for long-horizon tasks: how to build data models that can iteratively update and evolve through experience. Besides, I also study on how to design the most efficient vector retrieval algorithms. </p>
+            <p class="summary">My research has resulted in 60+ peer-reviewed publications, including work in CCF-A venues such as SIGMOD, VLDB, ICDE, and ICML, as well as leading journals including IEEE TKDE.</p>
+          </div>
+        </header>
 
-<h2 id="research-interests">Research Interests</h2>
-<ul>
-  <li>Community Mining, Modern Graph Mining, Knowledge Graph, Database System, RAG&amp;LLM, etc.</li>
-</ul>
+        <section class="research-interests seo-only" id="research-interests">
+          <div class="section-title">
+            <h2>Research Interests</h2>
+            <p class="section-note">Research on data management and graph intelligence at the intersection of agent memory, vector search, graph mining, knowledge graphs, and scalable database systems.</p>
+          </div>
+          <div class="chip-grid">
+            <span class="chip magnetic scale-bounce"><span>Agent Memory</span></span>
+            <span class="chip magnetic scale-bounce"><span>Vector Search</span></span>
+            <span class="chip alt magnetic scale-bounce"><span>Graph Mining</span></span>
+            <span class="chip magnetic scale-bounce"><span>Knowledge Graphs</span></span>
+            <span class="chip alt magnetic scale-bounce"><span>Graph Data Management</span></span>
+            <span class="chip magnetic scale-bounce"><span>RAG &amp; LLM Systems</span></span>
+          </div>
+        </section>
 
-<h2 id="students">Students</h2>
-<ul>
-  <li>
-    <p>2023: Xiaoyu Leng, Peng Wang</p>
-  </li>
-  <li>
-    <p>2024: Liming Xiang, Jing Feng, Bowen Fan</p>
-  </li>
-  <li>
-    <p>2025: Junfeng Zheng, Jiaxi Hou</p>
-  </li>
-</ul>
+        <section class="section reveal" id="academic-services">
+          <div class="section-title">
+            <h2>Academic Services – Past Year</h2>
+            <p class="section-note">Journal reviewing and program committee service.</p>
+          </div>
+          <ul class="services">
+            <li>Journal Reviewer: IEEE TKDE, IEEE TSC, IEEE TNNLS, IEEE T-ASE, IEEE TNSE, IEEE TCSS, ACM TKDD, ESWA, and JPDC.</li>
+            <li>PC Member: WSDM 2027, ICDM 2026, DASFAA 2027, AAAI 2027, IJCAI-ECAI 2026, PAKDD 2026, WISE 2026, SIGIR 2026, ICML 2026, EMNLP 2026, and NeurIPS 2026.</li>
+          </ul>
+        </section>
 
-<h2 id="publications">Publications</h2>
-<ol>
-  <li><u>Hongchao Qin</u>, Sen Gao, Rong-Hua Li, Hongzhi Chen, Ye Yuan, Guoren Wang. Colorful Star Motif Counting: Concepts, Algorithms and Applications. <em>IEEE Transactions on Knowledge and Data Engineering</em>, 2024.</li>
-  <li>Yalong Zhang, Rong-Hua Li, Qi Zhang, <u>Hongchao Qin</u>, Lu Qin, Guoren Wang. Efficient Algorithms for Pseudoarboricity Computation in Large Static and Dynamic Graphs. <em>Proceedings of the VLDB Endowment</em>, 17(11): 2722-2734, 2024.</li>
-  <li>Yalong Zhang, Rong-Hua Li, Qi Zhang, <u>Hongchao Qin</u>, Guoren Wang. Efficient Algorithms for Density Decomposition on Large Static and Dynamic Graphs. <em>Proceedings of the VLDB Endowment</em>, 17(11): 2933-2945, 2024.</li>
-  <li>Yue Zeng, <u>Hongchao Qin</u>, Rong-Hua Li, Kai Wang, Guoren Wang, Xuemin Lin. Mining quasi-periodic communities in temporal network. <em>ICDE</em>, 2476-2488, 2024.</li>
-  <li>Jiujian Chen, Kai Wang, Rong-Hua Li, <u>Hongchao Qin</u>, Xuemin Lin, Guoren Wang. Maximal Biclique Enumeration: A Prefix Tree Based Approach. <em>ICDE</em>, 2544-2556, 2024.</li>
-  <li>Yuchen Meng, Rong-Hua Li, <u>Hongchao Qin</u>, Xiang Wu, Huanzhong Duan, Yanxiong Lu, Guoren Wang. Encoding Group Interests With Persistent Homology for Personalized Search. <em>IEEE Transactions on Systems, Man, and Cybernetics: Systems</em>, 2024.</li>
-  <li>Xiang Wu, <u>Hongchao Qin</u>, Rong-Hua Li, Yuchen Meng, Huanzhong Duan, Yanxiong Lu, Yujing Gao, Fusheng Jin, Guoren Wang. Effective Personalized Search with Heterogeneous Graph based Hawkes Process. <em>IEEE Transactions on Big Data</em>, 2024.</li>
-  <li>Longlong Lin, Pingpeng Yuan, Rong-Hua Li, Chunxue Zhu, <u>Hongchao Qin</u>, Hai Jin, Tao Jia. QTCS: Efficient Query-Centered Temporal Community Search. <em>Proceedings of the VLDB Endowment</em>, 17(6): 1187-1199, 2024.</li>
-  <li>Sen Gao, <u>Hongchao Qin</u>, Rong-Hua Li, Bingsheng He. Parallel Colorful h-Star Core Maintenance in Dynamic Graphs. <em>Proceedings of the VLDB Endowment</em>, 16(10): 2538-2550, 2023.</li>
-  <li>Qi Zhang, Rong-Hua Li, <u>Hongchao Qin</u>, Yongheng Dai, Ye Yuan, Guoren Wang. Neighborhood skyline on graphs: Concepts, algorithms and applications. <em>ICDE</em>, 585-598, 2023.</li>
-  <li><u>Hongchao Qin</u>, Rong-Hua Li, Ye Yuan, Guoren Wang, Yongheng Dai. Explainable Hyperlink Prediction: A Hypergraph Edit Distance-Based Approach. <em>ICDE</em>, 245-257, 2023.</li>
-  <li>Meihao Liao, Rong-Hua Li, Qiangqiang Dai, Hongyang Chen, <u>Hongchao Qin</u>, Guoren Wang. Efficient personalized pagerank computation: The power of variance-reduced monte carlo approaches. <em>SIGMOD</em>, 1(2): 1-26, 2023.</li>
-  <li>Xiaowei Ye, Rong-Hua Li, Qiangqiang Dai, <u>Hongchao Qin</u>, Guoren Wang. Efficient biclique counting in large bipartite graphs. <em>SIGMOD</em>, 1(1): 1-26, 2023.</li>
-  <li>Meihao Liao, Rong-Hua Li, Qiangqiang Dai, Hongyang Chen, <u>Hongchao Qin</u>, Guoren Wang. Efficient resistance distance computation: The power of landmark-based approaches. <em>SIGMOD</em>, 1(1): 1-27, 2023.</li>
-  <li>Guoren Wang, Yue Zeng, Rong-Hua Li, <u>Hongchao Qin</u>, Xuanhua Shi, Yubin Xia, Xuequn Shang, Liang Hong. Temporal graph cube. <em>IEEE Transactions on Knowledge and Data Engineering</em>, 35(12): 13015-13030, 2023.</li>
-  <li>Zebin Ren, <u>Hongchao Qin</u>, Rong-Hua Li, Yongheng Dai, Guoren Wang, Yanhui Li. Mining Periodic k-Clique from Real-World Sparse Temporal Networks. <em>APWeb/WAIM</em>, 461-476, 2022.</li>
-  <li><u>Hongchao Qin</u>, Rong-Hua Li, Ye Yuan, Yongheng Dai, Guoren Wang. Densest periodic subgraph mining on large temporal graphs. <em>IEEE Transactions on Knowledge and Data Engineering</em>, 35(11): 11259-11273, 2023.</li>
-  <li><u>Hongchao Qin</u>, Rong-Hua Li, Ye Yuan, Guoren Wang, Lu Qin, Zhiwei Zhang. Mining Bursting Core in Large Temporal Graph. <em>Proceedings of the VLDB Endowment</em>, 15(13): 3911-3923, 2022.</li>
-  <li>Qiangqiang Dai, Rong-Hua Li, <u>Hongchao Qin</u>, Meihao Liao, Guoren Wang. Scaling up maximal k-plex enumeration. <em>CIKM</em>, 345-354, 2022.</li>
-  <li>Sen Gao, Rong-Hua Li, <u>Hongchao Qin</u>, Hongzhi Chen, Ye Yuan, Guoren Wang. Colorful h-star core decomposition. <em>ICDE</em>, 2588-2601, 2022.</li>
-  <li>Zijian Chen, Rong-Hua Li, <u>Hongchao Qin</u>, Huanzhong Duan, Yanxiong Lu, Qiangqiang Dai, Guoren Wang. Filtration-Enhanced Graph Transformation. <em>IJCAI</em>, 1987-1993, 2022.</li>
-  <li>Qi Zhang, Rong-Hua Li, <u>Hongchao Qin</u>, Guoren Wang, Zhiwei Zhang, Ye Yuan. Stable Subgraph Isomorphism Search in Temporal Networks. <em>IEEE Transactions on Knowledge and Data Engineering</em>, 35(6): 6405-6420, 2022.</li>
-  <li><u>Hongchao Qin</u>, Rong-Hua Li, Ye Yuan, Guoren Wang, Weihua Yang, Lu Qin. Periodic communities mining in temporal networks: Concepts and algorithms. <em>IEEE Transactions on Knowledge and Data Engineering</em>, 34(8): 3927-3945, 2020.</li>
-  <li><u>Hongchao Qin</u>, Rong-Hua Li, Guoren Wang, Xin Huang, Ye Yuan, Jeffrey Xu Yu. Mining stable communities in temporal networks by density-based clustering. <em>IEEE Transactions on Big Data</em>, 8(3): 671-684, 2020.</li>
-  <li>Lianpeng Qiao, Rong-Hua Li, Zhiwei Zhang, Ye Yuan, Guoren Wang, <u>Hongchao Qin</u>. Maximal Quasi-Cliques Mining in Uncertain Graphs. <em>IEEE Transactions on Big Data</em>, 9(1): 37-50, 2021.</li>
-  <li>Yi Zheng, <u>Hongchao Qin</u>, Jun Zheng, Fusheng Jin, Rong-Hua Li. Butterfly-based higher-order clustering on bipartite networks. <em>KSEM</em>, 485-497, 2020.</li>
-  <li><u>Hongchao Qin</u>, Rong-Hua Li, Guoren Wang, Lu Qin, Yurong Cheng, Ye Yuan. Mining periodic cliques in temporal networks. <em>ICDE</em>, 1130-1141, 2019.</li>
-  <li><u>Hongchao Qin</u>, Ye Yuan, Feida Zhu, Guoren Wang. Group Identity Matching Across Heterogeneous Social Networks. <em>WISE</em>, 230-246, 2018.</li>
-</ol>
+        <section class="section reveal" id="publications">
+          <div class="section-title">
+            <h2>Publications</h2>
+          </div>
+          <div class="pub-group">
+            <h3 class="pub-year">2026</h3>
+            <ol class="pub-list">
+              <li>Xiang Wu, Rong-Hua Li, Zhaoxin Fan, Kai Chen, Yujin Gao, <u>Hongchao Qin</u>, Guoren Wang. GRPCI: Harnessing Temporal-Spatial Dynamics for Graph Representation Learning. <em>IEEE Trans. Knowl. Data Eng.</em> 38(2): 1144-1158 (2026).</li>
+              <li>Jiayi Wu, Zhengyu Wu, Xunkai Li, Rong-Hua Li, <u>Hongchao Qin</u>, Guoren Wang. Effective Bug Detection in Graph Database Engines: An LLM-Based Approach. <em>IEEE Trans. Knowl. Data Eng.</em> 38(3): 1679-1694 (2026).</li>
+              <li>Donghang Cui, Rong-Hua Li, Qiangqiang Dai, <u>Hongchao Qin</u>, Guoren Wang. Maximum Defective Biclique Search in Large Bipartite Graphs. <em>Proc. VLDB Endow.</em> 19(11): 3259-3272 (2026).</li>
+              <li>Zhiqiu Zou, Ziqi Yin, Rong-Hua Li, <u>Hongchao Qin</u>, Qiangqiang Dai, Guoren Wang. RNSG: A Range-Aware Graph Index for Efficient Range-Filtered Approximate Nearest Neighbor Search. <em>Proc. VLDB Endow.</em> 19(10): 2839-2852 (2026).</li>
+              <li>Zekai Chen, Xunkai Li, Sirui Zhang, Henan Sun, Jia Li, Qiangqiang Dai, <u>Hongchao Qin</u>, Zhenjun Li, Bing Zhou, Rong-Hua Li, Guoren Wang. Towards Docking-oriented De Novo Ligand Design via Gradient Inversion. <em>ICML</em> 2026 (accepted).</li>
+              <li>Zekai Chen, Haodong Lu, Xunkai Li, Henan Sun, Jia Li, <u>Hongchao Qin</u>, Rong-Hua Li, Guoren Wang. DANCE: Dynamic, Available, Neighbor-gated Condensation for Federated Text-Attributed Graphs. <em>ICML</em> 2026 (accepted).</li>
+              <li>Sicheng Liu, Xunkai Li, Daohan Su, Ru Zhang, <u>Hongchao Qin</u>, Rong-Hua Li, Guoren Wang. Toward Effective Multimodal Graph Foundation Model: A Divide-and-Conquer Based Approach. <em>ICML</em> 2026 (accepted).</li>
+              <li>Xiang Wu, Rong-Hua Li, Xunkai Li, Kangfei Zhao, <u>Hongchao Qin</u>, Guoren Wang. Scalable Topology-Preserving Graph Coarsening: Concepts and Algorithms. <em>ICML</em> 2026 (accepted).</li>
+              <li>Chenxi Wan, Xunkai Li, Yilong Zuo, Haokun Deng, Sihan Li, Bowen Fan, <u>Hongchao Qin</u>, Rong-Hua Li, Guoren Wang. OpenMAG: A Comprehensive Benchmark for Multimodal-Attributed Graph. <em>ICML</em> 2026 (accepted).</li>
+              <li>Zening Li, <u>Hongchao Qin</u>, Guang Zeng, Rong-Hua Li. FortMem: Secure Stateful Data Management for Long-Term LLM Agent Memory. <em>CIKM</em> 2026 (accepted).</li>
+              <li>Zening Li, <u>Hongchao Qin</u>, Guang Zeng, Rong-Hua Li. PrivMem: Privacy-Preserving Temporal Motif Mining over Cross-User Agent Memory Graphs. <em>CIKM</em> 2026 (accepted).</li>
+              <li>Tianyi Gao, <u>Hongchao Qin</u>, Haotian Jiang, Guang Zeng, Rong-Hua Li. Bounded-Memory Aggregate Query Processing on Streaming Temporal Graphs. <em>CIKM</em> 2026 (accepted).</li>
+              <li>Xiang Wu, <u>Hongchao Qin</u>, Guang Zeng, Rong-Hua Li, Kangfei Zhao. H-Mem: Hawkes-driven Adaptive Forgetting for Long-Horizon Agent Memory. <em>CIKM</em> 2026 (accepted).</li>
+              <li>Yaxin Deng, <u>Hongchao Qin</u>, Tianyi Gao, Guang Zeng, Rong-Hua Li. MemDTG: Dynamic Temporal Memory Graphs for Evidence-Admissible Agent Memory. <em>CIKM</em> 2026 (accepted).</li>
+              <li>Ziming Shao, Rong-Hua Li, <u>Hongchao Qin</u>, Qiangqiang Dai, Guoren Wang. Support-Compatible Graph Construction for Local Geometric Anomaly Retrieval. <em>ICDM</em> 2026 (accepted).</li>
+              <li>Liming Xiang, Jing Feng, <u>Hongchao Qin</u>. Temporal Anomalous Community Detection in Agent Memory. <em>ICDM</em> 2026 (accepted).</li>
+              <li>Zhengyu Wu, Xu Wang, <u>Hongchao Qin</u>, Xunkai Li, Guang Zeng, Rong-Hua Li, Guoren Wang. Toward Multimodal Graph Foundation Model: A Spectral-Based Approach. <em>ICDM</em> 2026 (accepted).</li>
+              <li>Sirui Zhang, Xu Wang, Zhengyu Wu, Xunkai Li, <u>Hongchao Qin</u>. CoMAG: Context-Aware Modality-Topology Co-Alignment for Multimodal Attributed Graphs. <em>ICDM</em> 2026 (accepted).</li>
+            </ol>
+          </div>
+          <div class="pub-group">
+            <h3 class="pub-year">2025</h3>
+            <ol class="pub-list">
+              <li>Yalong Zhang, Rong-Hua Li, Qi Zhang, <u>Hongchao Qin</u>, Lu Qin, Guoren Wang. Density Decomposition of Bipartite Graphs. <em>Proc. ACM Manag. Data</em> 3(1): 30:1-30:25 (2025).</li>
+              <li>Yue Zeng, Miao Qiao, Rong-Hua Li, <u>Hongchao Qin</u>, Guoren Wang. Scaling Up k-Clique Percolation Community Detection. <em>Proc. ACM Manag. Data</em> 3(4): 263:1-263:27 (2025).</li>
+              <li><u>Hongchao Qin</u>, Guang Zeng, Rong-Hua Li, Longlong Lin, Ye Yuan, Guoren Wang. Truss Decomposition in Hypergraphs. <em>Proc. VLDB Endow.</em> 18(7): 2185-2197 (2025).</li>
+              <li>Xiang Wu, <u>Hongchao Qin</u>, Rong-Hua Li, Yuchen Meng, Huanzhong Duan, Yanxiong Lu, Yujing Gao, Fusheng Jin, Guoren Wang. Effective Personalized Search With Heterogeneous Graph Based Hawkes Process. <em>IEEE Trans. Big Data</em> 11(2): 402-413 (2025).</li>
+              <li><u>Hongchao Qin</u>, Sen Gao, Rong-Hua Li, Hongzhi Chen, Ye Yuan, Guoren Wang. Colorful Star Motif Counting: Concepts, Algorithms and Applications. <em>IEEE Trans. Knowl. Data Eng.</em> 37(3): 1105-1125 (2025).</li>
+              <li>Longlong Lin, Zeli Wang, Rong-Hua Li, Qiyu Liu, <u>Hongchao Qin</u>, Jin Zhao. Provable Higher-Order Graph Clustering: The Power of Peeling-Based Approaches. <em>IEEE Trans. Knowl. Data Eng.</em> 37(9): 5568-5583 (2025).</li>
+              <li>Qi Zhang, Rong-Hua Li, Yalong Zhang, <u>Hongchao Qin</u>, Guoren Wang. Density decomposition on large static and dynamic graphs: algorithms and applications. <em>VLDB J.</em> 34(6): 63 (2025).</li>
+              <li>Qi Zhang, Rong-Hua Li, Zifan Zheng, <u>Hongchao Qin</u>, Ye Yuan, Guoren Wang. Efficient Maximum Fair Clique Search Over Large Networks. <em>ICDE</em> (2025): 1043-1055.</li>
+              <li>Xiaoyu Leng, Guang Zeng, <u>Hongchao Qin</u>, Longlong Lin, Rong-Hua Li. On Temporal-Constraint Subgraph Matching. <em>ICDE</em> (2025): 2493-2506.</li>
+              <li>Xunkai Li, Zhengyu Wu, Kaichi Yu, <u>Hongchao Qin</u>, Guang Zeng, Rong-Hua Li, Guoren Wang. Toward Data-centric Directed Graph Learning: An Entropy-driven Approach. <em>ICML</em> (2025).</li>
+              <li>Xunkai Li, Daohan Su, Zhengyu Wu, Guang Zeng, <u>Hongchao Qin</u>, Rong-Hua Li, Guoren Wang. Toward Effective Digraph Representation Learning: A Magnetic Adaptive Propagation based Approach. <em>WWW</em> (2025): 2908-2923.</li>
+            </ol>
+          </div>
+          <div class="pub-group">
+            <h3 class="pub-year">2024</h3>
+            <ol class="pub-list">
+              <li>Longlong Lin, Pingpeng Yuan, Rong-Hua Li, Chunxue Zhu, <u>Hongchao Qin</u>, Hai Jin, Tao Jia. QTCS: Efficient Query-Centered Temporal Community Search. <em>Proc. VLDB Endow.</em> 17(6): 1187-1199 (2024).</li>
+              <li>Yalong Zhang, Rong-Hua Li, Qi Zhang, <u>Hongchao Qin</u>, Lu Qin, Guoren Wang. Efficient Algorithms for Pseudoarboricity Computation in Large Static and Dynamic Graphs. <em>Proc. VLDB Endow.</em> 17(11): 2722-2734 (2024).</li>
+              <li>Yalong Zhang, Rong-Hua Li, Qi Zhang, <u>Hongchao Qin</u>, Guoren Wang. Efficient Algorithms for Density Decomposition on Large Static and Dynamic Graphs. <em>Proc. VLDB Endow.</em> 17(11): 2933-2945 (2024).</li>
+              <li>Yuchen Meng, Rong-Hua Li, <u>Hongchao Qin</u>, Xiang Wu, Huanzhong Duan, Yanxiong Lu, Guoren Wang. Encoding Group Interests With Persistent Homology for Personalized Search. <em>IEEE Trans. Syst. Man Cybern. Syst.</em> 54(9): 5606-5616 (2024).</li>
+              <li>Yue Zeng, <u>Hongchao Qin</u>, Rong-Hua Li, Kai Wang, Guoren Wang, Xuemin Lin. Mining Quasi-Periodic Communities in Temporal Network. <em>ICDE</em> (2024): 2476-2488.</li>
+              <li>Jiujian Chen, Kai Wang, Rong-Hua Li, <u>Hongchao Qin</u>, Xuemin Lin, Guoren Wang. Maximal Biclique Enumeration: A Prefix Tree Based Approach. <em>ICDE</em> (2024): 2544-2556.</li>
+            </ol>
+          </div>
+          <div class="pub-group">
+            <h3 class="pub-year">2023</h3>
+            <ol class="pub-list">
+              <li>Yingfu Zhao, Fusheng Jin, Rong-Hua Li, <u>Hongchao Qin</u>, Peng Cui, Guoren Wang. Self-attention Hypergraph Pooling Network. <em>Int. J. Softw. Informatics</em> 13(4): 379-397 (2023).</li>
+              <li>Meihao Liao, Rong-Hua Li, Qiangqiang Dai, Hongyang Chen, <u>Hongchao Qin</u>, Guoren Wang. Efficient Resistance Distance Computation: The Power of Landmark-based Approaches. <em>Proc. ACM Manag. Data</em> 1(1): 68:1-68:27 (2023).</li>
+              <li>Xiaowei Ye, Rong-Hua Li, Qiangqiang Dai, <u>Hongchao Qin</u>, Guoren Wang. Efficient Biclique Counting in Large Bipartite Graphs. <em>Proc. ACM Manag. Data</em> 1(1): 78:1-78:26 (2023).</li>
+              <li>Meihao Liao, Rong-Hua Li, Qiangqiang Dai, Hongyang Chen, <u>Hongchao Qin</u>, Guoren Wang. Efficient Personalized PageRank Computation: The Power of Variance-Reduced Monte Carlo Approaches. <em>Proc. ACM Manag. Data</em> 1(2): 160:1-160:26 (2023).</li>
+              <li>Sen Gao, <u>Hongchao Qin</u>, Rong-Hua Li, Bingsheng He. Parallel Colorful h-star Core Maintenance in Dynamic Graphs. <em>Proc. VLDB Endow.</em> 16(10): 2538-2550 (2023).</li>
+              <li>Lianpeng Qiao, Rong-Hua Li, Zhiwei Zhang, Ye Yuan, Guoren Wang, <u>Hongchao Qin</u>. Maximal Quasi-Cliques Mining in Uncertain Graphs. <em>IEEE Trans. Big Data</em> 9(1): 37-50 (2023).</li>
+              <li>Qi Zhang, Rong-Hua Li, <u>Hongchao Qin</u>, Guoren Wang, Zhiwei Zhang, Ye Yuan. Stable Subgraph Isomorphism Search in Temporal Networks. <em>IEEE Trans. Knowl. Data Eng.</em> 35(6): 6405-6420 (2023).</li>
+              <li><u>Hongchao Qin</u>, Rong-Hua Li, Ye Yuan, Guoren Wang, Yongheng Dai. Densest Periodic Subgraph Mining on Large Temporal Graphs. <em>IEEE Trans. Knowl. Data Eng.</em> 35(11): 11259-11273 (2023).</li>
+              <li>Guoren Wang, Yue Zeng, Rong-Hua Li, <u>Hongchao Qin</u>, Xuanhua Shi, Yubin Xia, Xuequn Shang, Liang Hong. Temporal Graph Cube. <em>IEEE Trans. Knowl. Data Eng.</em> 35(12): 13015-13030 (2023).</li>
+              <li><u>Hongchao Qin</u>, Rong-Hua Li, Ye Yuan, Guoren Wang, Yongheng Dai. Explainable Hyperlink Prediction: A Hypergraph Edit Distance-Based Approach. <em>ICDE</em> (2023): 245-257.</li>
+              <li>Qi Zhang, Rong-Hua Li, <u>Hongchao Qin</u>, Yongheng Dai, Ye Yuan, Guoren Wang. Neighborhood Skyline on Graphs: Concepts, Algorithms and Applications. <em>ICDE</em> (2023): 585-598.</li>
+            </ol>
+          </div>
+          <div class="pub-group">
+            <h3 class="pub-year">2022</h3>
+            <ol class="pub-list">
+              <li><u>Hongchao Qin</u>, Rong-Hua Li, Ye Yuan, Guoren Wang, Lu Qin, Zhiwei Zhang. Mining Bursting Core in Large Temporal Graph. <em>Proc. VLDB Endow.</em> 15(13): 3911-3923 (2022).</li>
+              <li><u>Hongchao Qin</u>, Rong-Hua Li, Guoren Wang, Xin Huang, Ye Yuan, Jeffrey Xu Yu. Mining Stable Communities in Temporal Networks by Density-Based Clustering. <em>IEEE Trans. Big Data</em> 8(3): 671-684 (2022).</li>
+              <li><u>Hongchao Qin</u>, Rong-Hua Li, Ye Yuan, Guoren Wang, Weihua Yang, Lu Qin. Periodic Communities Mining in Temporal Networks: Concepts and Algorithms. <em>IEEE Trans. Knowl. Data Eng.</em> 34(8): 3927-3945 (2022).</li>
+              <li>Zebin Ren, <u>Hongchao Qin</u>, Rong-Hua Li, Yongheng Dai, Guoren Wang, Yanhui Li. Mining Periodic k-Clique from Real-World Sparse Temporal Networks. <em>APWeb/WAIM (1)</em> (2022): 461-476.</li>
+              <li>Qiangqiang Dai, Rong-Hua Li, <u>Hongchao Qin</u>, Meihao Liao, Guoren Wang. Scaling Up Maximal k-plex Enumeration. <em>CIKM</em> (2022): 345-354.</li>
+              <li>Sen Gao, Rong-Hua Li, <u>Hongchao Qin</u>, Hongzhi Chen, Ye Yuan, Guoren Wang. Colorful h-star Core Decomposition. <em>ICDE</em> (2022): 2588-2601.</li>
+              <li>Zijian Chen, Rong-Hua Li, <u>Hongchao Qin</u>, Huanzhong Duan, Yanxiong Lu, Qiangqiang Dai, Guoren Wang. Filtration-Enhanced Graph Transformation. <em>IJCAI</em> (2022): 1987-1993.</li>
+            </ol>
+          </div>
+          <div class="pub-group">
+            <h3 class="pub-year">Before 2021</h3>
+            <ol class="pub-list">
+              <li>Zezhong Wang, Ye Yuan, Xiangmin Zhou, <u>Hongchao Qin</u>. Effective and Efficient Community Search in Directed Graphs Across Heterogeneous Social Networks. <em>ADC</em> (2020): 161-172.</li>
+              <li>Yi Zheng, <u>Hongchao Qin</u>, Jun Zheng, Fusheng Jin, Rong-Hua Li. Butterfly-Based Higher-Order Clustering on Bipartite Networks. <em>KSEM (1)</em> (2020): 485-497.</li>
+              <li><u>Hongchao Qin</u>, Rong-Hua Li, Guoren Wang, Lu Qin, Yurong Cheng, Ye Yuan. Mining Periodic Cliques in Temporal Networks. <em>ICDE</em> (2019): 1130-1141.</li>
+              <li>Yuliang Ma, Ye Yuan, Guoren Wang, Xin Bi, <u>Hongchao Qin</u>. Trust-Aware Personalized Route Query Using Extreme Learning Machine in Location-Based Social Networks. <em>Cogn. Comput.</em> 10(6): 965-979 (2018).</li>
+              <li><u>Hongchao Qin</u>, Ye Yuan, Feida Zhu, Guoren Wang. Group Identity Matching Across Heterogeneous Social Networks. <em>WISE (1)</em> (2018): 230-246.</li>
+              <li>Zezhong Wang, Ye Yuan, Guoren Wang, <u>Hongchao Qin</u>, Yuliang Ma. An Effective Method for Community Search in Large Directed Attributed Graphs. <em>MSN</em> (2017): 237-251.</li>
+              <li><u>Hongchao Qin</u>, Ye Yuan, Feida Zhu, Guoren Wang. Efficient Community Maintenance for Dynamic Social Networks. <em>APWeb (2)</em> (2016): 478-482.</li>
+            </ol>
+          </div>
+        </section>
 
-<h2 id="academic-services">Academic Services</h2>
-<ul>
-  <li>
-    <p>Invited Journal Reviewer: IEEE TKDE, KAIS, WWWJ, etc.</p>
-  </li>
-  <li>
-    <p>(External) Conference Reviewer: VLDB, ICDE, KDD, etc.</p>
-  </li>
-</ul>
+        <footer class="site-footer">Last updated: September 6, 2026</footer>
+      </div>
 
-    </div>
+      <nav class="nav-dots" id="navDots">
+        <a href="#hero" class="nav-dot active magnetic" data-section="hero" title="Home"></a>
+        <a href="#academic-services" class="nav-dot magnetic" data-section="academic-services" title="Services"></a>
+        <a href="#publications" class="nav-dot magnetic" data-section="publications" title="Publications"></a>
+      </nav>
+    </main>
+
+    <script>
+    (function() {
+      var name = "Hongchao Qin";
+      var typingElement = document.getElementById('typingName');
+      var charIndex = 0;
+
+      function typeWriter() {
+        if (charIndex < name.length) {
+          typingElement.textContent += name.charAt(charIndex);
+          charIndex++;
+          setTimeout(typeWriter, 120);
+        }
+      }
+
+      setTimeout(typeWriter, 600);
+
+      var revealElements = document.querySelectorAll('.reveal');
+      var navDots = document.querySelectorAll('.nav-dot');
+      var scrollProgress = document.getElementById('scrollProgress');
+
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+
+            var sectionId = entry.target.id;
+            navDots.forEach(function(dot) {
+              dot.classList.remove('active');
+              if (dot.getAttribute('data-section') === sectionId) {
+                dot.classList.add('active');
+              }
+            });
+          }
+        });
+      }, {
+        threshold: 0.2,
+        rootMargin: '-50px'
+      });
+
+      revealElements.forEach(function(el) {
+        observer.observe(el);
+      });
+
+      window.addEventListener('scroll', function() {
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        var docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrollPercent = scrollTop / docHeight;
+        scrollProgress.style.transform = 'scaleX(' + scrollPercent + ')';
+      });
+
+      navDots.forEach(function(dot) {
+        dot.addEventListener('click', function(e) {
+          e.preventDefault();
+          var targetId = this.getAttribute('href').substring(1);
+          var targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+
+      var customCursor = document.getElementById('customCursor');
+      var cursorDot = document.getElementById('cursorDot');
+      var mouseX = 0, mouseY = 0;
+      var cursorX = 0, cursorY = 0;
+
+      document.addEventListener('mousemove', function(e) {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        cursorDot.style.left = mouseX + 'px';
+        cursorDot.style.top = mouseY + 'px';
+      });
+
+      function animateCursor() {
+        cursorX += (mouseX - cursorX) * 0.55;
+        cursorY += (mouseY - cursorY) * 0.55;
+        customCursor.style.left = cursorX + 'px';
+        customCursor.style.top = cursorY + 'px';
+        requestAnimationFrame(animateCursor);
+      }
+      animateCursor();
+
+      var hoverElements = document.querySelectorAll('a, .chip, .nav-dot, .meta-item, .pub-list li, .services li, .avatar-wrapper');
+      hoverElements.forEach(function(el) {
+        el.addEventListener('mouseenter', function() {
+          customCursor.classList.add('hover');
+        });
+        el.addEventListener('mouseleave', function() {
+          customCursor.classList.remove('hover');
+        });
+      });
+
+      var magneticElements = document.querySelectorAll('.magnetic');
+      magneticElements.forEach(function(el) {
+        el.addEventListener('mousemove', function(e) {
+          var rect = el.getBoundingClientRect();
+          var x = e.clientX - rect.left - rect.width / 2;
+          var y = e.clientY - rect.top - rect.height / 2;
+          el.style.transform = 'translate(' + (x * 0.15) + 'px, ' + (y * 0.15) + 'px)';
+        });
+        el.addEventListener('mouseleave', function() {
+          el.style.transform = 'translate(0, 0)';
+        });
+      });
+
+      var particlesContainer = document.getElementById('particles');
+      var particleCount = 15;
+      for (var i = 0; i < particleCount; i++) {
+        var particle = document.createElement('div');
+        particle.className = 'particle';
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.animationDelay = Math.random() * 15 + 's';
+        particle.style.animationDuration = (15 + Math.random() * 10) + 's';
+        particlesContainer.appendChild(particle);
+      }
+
+      document.addEventListener('click', function(e) {
+        var ripple = document.createElement('div');
+        ripple.className = 'ripple';
+        ripple.style.left = e.clientX + 'px';
+        ripple.style.top = e.clientY + 'px';
+        ripple.style.width = '20px';
+        ripple.style.height = '20px';
+        ripple.style.marginLeft = '-10px';
+        ripple.style.marginTop = '-10px';
+        document.body.appendChild(ripple);
+        setTimeout(function() {
+          ripple.remove();
+        }, 800);
+      });
+
+      var sections = document.querySelectorAll('.section, .hero');
+      sections.forEach(function(section) {
+        section.addEventListener('click', function(e) {
+          if (e.target.tagName === 'A') return;
+          var ripple = document.createElement('div');
+          ripple.className = 'ripple';
+          ripple.style.left = (e.clientX - section.getBoundingClientRect().left) + 'px';
+          ripple.style.top = (e.clientY - section.getBoundingClientRect().top) + 'px';
+          ripple.style.width = '20px';
+          ripple.style.height = '20px';
+          ripple.style.marginLeft = '-10px';
+          ripple.style.marginTop = '-10px';
+          section.appendChild(ripple);
+          setTimeout(function() {
+            ripple.remove();
+          }, 800);
+        });
+      });
+
+      var pubItems = document.querySelectorAll('.pub-list li');
+      pubItems.forEach(function(item, index) {
+        item.style.transitionDelay = (index * 0.03) + 's';
+      });
+
+      var hero = document.getElementById('hero');
+      var heroGlow = hero.querySelector('.glow-border');
+
+      hero.addEventListener('mousemove', function(e) {
+        var rect = hero.getBoundingClientRect();
+        var x = ((e.clientX - rect.left) / rect.width) * 100;
+        var y = ((e.clientY - rect.top) / rect.height) * 100;
+        hero.style.background = 'radial-gradient(circle at ' + x + '% ' + y + '%, rgba(244, 143, 177, 0.08), transparent 50%), var(--card-bg)';
+      });
+
+      hero.addEventListener('mouseleave', function() {
+        hero.style.background = 'var(--card-bg)';
+      });
+    })();
+    </script>
   </body>
 </html>
