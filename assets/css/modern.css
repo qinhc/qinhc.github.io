@@ -248,6 +248,19 @@ img {
   text-underline-offset: 2px;
 }
 
+.pub-list li .paper-link {
+  margin-left: 0.35em;
+  color: #b3261e;
+  text-decoration: none;
+  opacity: 0.85;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.pub-list li .paper-link:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
 .services {
   margin: 0;
   padding-left: 22px;
